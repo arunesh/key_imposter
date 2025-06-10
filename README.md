@@ -13,7 +13,7 @@ pip install -r requirements.txt
 
 ## Record keystroke audio data for your local keyboard
 
-Data is stores in a local `keystroke_sounds/ ` folder.
+Data is stored in a local `keystroke_sounds/ ` folder.
 ```
 
 python record_keys.py
