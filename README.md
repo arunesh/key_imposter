@@ -2,8 +2,26 @@
 
 ```
 
+# create a virtual python env
 python -m venv .env
 source .env/bin/activate
 
+# install the dependencies 
 pip install -r requirements.txt
+
+```
+
+## Record keystroke data for your local keyboard
+
+Data is stores in a local `keystroke_sounds/ ` folder.
+```
+
+python record_keys.py
+```
+
+Inject keystroke with sounds (turn speaker on)
+
+```
+python simulate_typing.py
+```
 ```
