@@ -6,7 +6,6 @@ import random
 import threading
 from pynput.keyboard import Controller
 
-# --- Configuration ---
 SOUNDS_DIR = "keystroke_sounds" # Must match the output dir from the recorder
 
 # Create a keyboard controller instance
@@ -55,7 +54,7 @@ def simulate_typing(text):
     print("Starting simulation...      ") # Extra spaces to clear line
 
     for char in text:
-        # --- 1. Play Sound (in background) ---
+        #Play Sound (in background)
         # We find the sound for the lowercase version of the key.
         char_lower = char.lower()
         if 'a' <= char_lower <= 'z':
@@ -64,11 +63,11 @@ def simulate_typing(text):
             sound_thread = threading.Thread(target=play_wav_task, args=(sound_file,), daemon=True)
             sound_thread.start()
 
-        # --- 2. Inject Keystroke ---
+        # Inject Keystroke
         # The controller handles uppercase, punctuation, etc., automatically.
         keyboard.type(char)
 
-        # --- 3. Pause Realistically ---
+        # realistic pause 
         # Add a human-like, slightly random delay between keystrokes.
         if char == ' ':
             # Longer pause for spacebar

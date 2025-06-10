@@ -106,28 +106,27 @@ def press_hotkey(key, *modifiers):
 
 
 if __name__ == "__main__":
-    # --- Example Usage ---
     print("Starting keystroke injection in 5 seconds...")
     print("Quickly switch to a text editor or any input field.")
     time.sleep(5)
 
-    # Example 1: Type a simple string
+    # Type a simple string
     print("Typing 'hello world'...")
     type_string("hello World")
     press_key(key_code_map['return'])
 
-    # Example 2: Simulate a hotkey (Command-A to select all)
+    #  Simulate a hotkey (Command-A to select all)
     print("Simulating Command-A (Select All)...")
     time.sleep(1)
     press_hotkey('a', kCGEventFlagMaskCommand)
     time.sleep(1)
 
-    # Example 3: Simulate another hotkey (Command-C to copy)
+    #  Simulate another hotkey (Command-C to copy)
     print("Simulating Command-C (Copy)...")
     press_hotkey('c', kCGEventFlagMaskCommand)
     time.sleep(1)
     
-    # Example 4: Simulate paste (Command-V)
+    #  Simulate paste (Command-V)
     print("Simulating Command-V (Paste)...")
     press_hotkey('v', kCGEventFlagMaskCommand)
 
