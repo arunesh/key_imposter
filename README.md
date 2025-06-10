@@ -19,7 +19,7 @@ Data is stored in a local `keystroke_sounds/ ` folder.
 python record_keys.py
 ```
 
-Inject keystroke with sounds (turn speaker on)
+Inject keystrokes with sound (turn speaker on)
 
 ```
 python simulate_typing.py
