@@ -16,7 +16,6 @@ from Quartz import (
 
 # --- Key Code Mapping ---
 # The API needs virtual key codes, not characters.
-# This is a partial map. For a full list, see the link in the explanation below.
 key_code_map = {
     'a': 0x00, 's': 0x01, 'd': 0x02, 'f': 0x03, 'h': 0x04,
     'g': 0x05, 'z': 0x06, 'x': 0x07, 'c': 0x08, 'v': 0x09,
